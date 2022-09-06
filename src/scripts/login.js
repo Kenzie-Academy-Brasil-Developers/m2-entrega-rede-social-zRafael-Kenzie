@@ -1,4 +1,4 @@
-import { ApiRequest } from "../scripts/models/api.js";
+import { ApiRequests } from "../scripts/models/api.js";
 
 export class LoginPage {
     static async loginUser(){
@@ -15,7 +15,7 @@ export class LoginPage {
             }
             loginInput.value = ''
             passInput.value = ''
-            ApiRequest.userLogin(data)
+            ApiRequests.loginUser(data)
         })
     
     }

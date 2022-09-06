@@ -20,7 +20,6 @@ class RegisterPage {
                 'work_at': profissao.value,
                 'image': urlImg.value
             }
-            console.log(data)
             await ApiRequest.newUser(data)
         })
     }

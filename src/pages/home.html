@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/styles/reset.css">
+    <link rel="stylesheet" href="/src/styles/component.css">
+    <link rel="stylesheet" href="/src/modals/modalHome.css">
+    <link rel="stylesheet" href="/src/styles/home.css">
+    <title>Rede Social - Home Page</title>
+</head>
+<body>
+    <header>
+        <img src="../assets/TechPosters.png" alt="">
+        <div class="ajustar-btn">
+                <button class="sair">Sair</button>
+        
+        </div>
+    </header>
+    <main>
+        <section class="section_user">
+            <figure>
+                <img id="imgUser" src="" alt="Foto de Perfil">
+            </figure>
+            <div class="div_user">
+                <h2 id="nameUser">Samuel Leão</h2>
+                <p id="workUser">Front end Engineer</p>
+            </div>
+            <span id="followUser">565 seguidores</span>
+        </section>
+            <section class="newPosts">
+                <form action="">
+                    <input id="postTitulo" type="text" placeholder="Digitar título do post">
+                    <input id="postContent" type="text" placeholder="Digitar descrição do post">
+                    <button id="btnPost">Postar</button>
+                </form>
+            </section>
+            <section class="sugestoes">
+                <aside class="aside">
+                    <h2>Sugestões para você seguir</h2>
+                    <ul class="list">
+                       
+                    </ul>
+                </aside>
+            </section>
+        <section class="posts">
+            <h2>Posts</h2>
+            <ul id="listPost">
+                
+            </ul>
+        </section>
+
+        <div class="modalPost">
+            <div class="modal">
+                <div class="modalHeader">
+                    <img id="modalIgm" src="" alt="Foto de perfil">
+                    <div class="edit_header">
+                        <h3 id="nameModal"> </h3>
+                        <p id="workModal"> </p>
+                    </div>
+                    <p id="closeModal">X</p>
+                </div>
+                <div class="modalTitle">
+                    <h2 id="titleModal"> </h2>
+                </div>
+                <div class="modalContent">
+                    <p id="contentModal"> </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="/src/scripts/home.js"></script>
+</body>
+</html>
