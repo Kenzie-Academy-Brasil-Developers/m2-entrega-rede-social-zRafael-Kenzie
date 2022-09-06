@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/styles/reset.css">
+    <link rel="stylesheet" href="/src/styles/component.css">
+    <link rel="stylesheet" href="/src/styles/register.css">
+    <title>Rede Social - Cadastro</title>
+</head>
+<body>
+<header>
+    <img src="/src/assets/TechPosters.png" alt="">
+    <div class="ajustar-btn">
+        <button class="login">Login</button>
+        <button disabled class="registro">Registro</button>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <h1>Cadastro</h1>
+        <form action="">
+            <input id="nome" type="text" placeholder="Seu nome">
+            <input id="email" type="text" placeholder="Seu e-mail">
+            <input id="password" type="text" placeholder="Sua senha">
+            <input id="profissao" type="text" placeholder="Qual é a sua profissão?">
+            <input id="urlImg" type="text" placeholder="URL da imagem de perfil">
+            <button id="btnCadastrar" class="btn-principal">Cadastrar</button>
+        </form>
+        <p class="paragrafoCadastro">Já possui cadastro?</p>
+        <button class="btn-secundario">Ir para página de login</button>
+    </div>
+</main>
+
+<script type="module" src="/src/scripts/singup.js"></script>
+</body>
+</html>

@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rede Social</title>
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/component.css">
+    <link rel="stylesheet" href="src/styles/login.css">
+    <link rel="stylesheet" href="src/modals/modalLogin.css">
+    <title>Rede Social - login</title>
 </head>
+
 <body>
-    
+    <body>
+        <header>
+            <img src="./src/assets/TechPosters.png" alt="">
+            <div class="ajustar-btn">
+                <button disabled class="login">Login</button>
+                <button class="registro">Registro</button>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <h1>Login</h1>
+                <form action="">
+                    <input id="email" class="email" type="text" placeholder="Seu e-mail">
+                    <input id="password" class="password" type="password" placeholder="Sua senha">
+                    <button id="btnLogar" class="btn-principal">Logar</button>
+                    <p class="paragrafoCadastro">Ainda não possui cadastro?</p>
+                
+                </form>
+                <button class="btn-secundario">Ir para página de registro</button>
+                
+            </div>
+            <div class="modalWrapper" id="modalLogin">
+                <div class="modal">
+                    <div class="modalHeader">
+                        <h3 class="modalTitle">Acesso não autorizado</h3>
+                    </div>
+                    <div class="modalBody">
+                        <p class="parafrafoModal">Conta não existente, tente novamente, caso não consiga, efetue o cadastro!</p>
+                        <button id="btnModal" class="btnModal">Entendi</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script type="module" src="src/scripts/login.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
+
 </html>

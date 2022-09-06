@@ -1,0 +1,102 @@
+.modalPost {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: var(--white);
+    width: 380px;
+    height: 700px;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.modalHeader {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.modalHeader > p {
+    position: absolute;
+    right: -50px;
+    top: 10px;
+    font-size: 1.3rem;
+    line-height: 0;
+    font-weight: 700;
+    color: var(--gray4);
+}
+
+.modalTitle {
+    text-align: start;
+}
+
+.modalTitle h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: var(--gray1);
+}
+
+.modalContent {
+    text-align: start;
+}
+
+.modalContent p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    font-weight: 400;
+    color: var(--gray2);
+}
+
+#closeModal {
+    cursor: pointer;
+}
+
+.modal {
+    animation: animateModal 1.7s;
+}
+
+@keyframes animateModal {
+    0% {
+        transform: translateY(-70%);
+        opacity: 0.3;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (min-width: 769px) {
+    .modal {
+        position: absolute;
+        left: 340px;
+        top: 100px;
+        width: 760px;
+        height: max-content;
+    }
+
+    .modalHeader > p {
+        right: -500px;
+    }
+
+    .modalContent p {
+        line-height: 2rem;
+    }
+}
