@@ -234,3 +234,4 @@ HomePage.logout()
 HomePage.getPosts()
 HomePage.createNewPost()
 HomePage.renderUser()
+

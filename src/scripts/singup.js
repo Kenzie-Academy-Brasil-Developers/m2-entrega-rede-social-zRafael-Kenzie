@@ -1,4 +1,4 @@
-import { ApiRequest } from "../scripts/models/api.js";
+import { ApiRequests } from "../scripts/models/api.js";
 
 class RegisterPage {
 
@@ -20,7 +20,7 @@ class RegisterPage {
                 'work_at': profissao.value,
                 'image': urlImg.value
             }
-            await ApiRequest.newUser(data)
+            await ApiRequests.cadastroUser(data)
         })
     }
 

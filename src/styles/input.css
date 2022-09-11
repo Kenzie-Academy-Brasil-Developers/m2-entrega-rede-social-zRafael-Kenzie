@@ -1,0 +1,16 @@
+input::placeholder {
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    color: var(--gray2);
+}
+
+input {
+    margin: auto;
+    width: 80%;
+    height: 2.2rem;
+    border: 2px solid var(--gray4);
+    border-radius: 5px;
+    padding: 1rem 1.2rem;
+    background-color: var(--white);
+}
