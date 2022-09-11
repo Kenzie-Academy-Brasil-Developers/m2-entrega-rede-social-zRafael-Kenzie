@@ -47,18 +47,7 @@ table {
 	border-spacing: 0;
 }
 
-:root {
-    --primary: #4263EB;
-    --secundary: #364FC7;
-    --gray0: #0A0C0D;
-    --gray1: #212529;
-    --gray2: #495057;
-    --gray3: #868E96;
-    --gray4: #DEE2E6;
-    --gray-opacity-1: rgba(33, 37, 41, 0.5);
-    --white: #FFFFFF;
-    --like: #D7443E;
-}
+
 
 body {
     font-family: 'Inter', sans-serif;

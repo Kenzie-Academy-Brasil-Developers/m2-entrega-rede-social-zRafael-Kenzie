@@ -9,10 +9,14 @@ export class ApiRequests {
                 body: JSON.stringify(body),
             }
         )
-            .then(res => res.json())
-            .then(res => {
-                window.location.replace('../../index.html')
-                return res
+            .then((res) => {
+                if (res.status !== 201) {
+                    alert('Não foi possivel completar o registro')
+
+                } else {
+                    window.location.replace('../../index.html')
+                    return res.json();
+                }
             })
             .catch(err => console.log(err));
         return resposta;
@@ -111,7 +115,13 @@ export class ApiRequests {
                 },
             }
         )
-            .then((res) => res.json())
+            .then((res) => {
+                if (res.status !== 200) {
+                    window.location.replace('../../index.html')
+                } else {
+                    return res.json();
+                }
+            })
             .then((res) => res);
         return allPosts;
     }
@@ -125,7 +135,7 @@ export class ApiRequests {
                 Authorization: `Token ${token}`,
             },
         })
-            .then(response => response.json())
+            .then((res) => res.json())
             .catch(err => console.log(err))
 
         return result
